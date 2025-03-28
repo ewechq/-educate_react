@@ -1,0 +1,16 @@
+.Button {
+    border:0;
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+}
+
+.clear {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
