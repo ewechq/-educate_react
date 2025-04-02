@@ -1,5 +1,4 @@
 import './styles/index.scss';
-import { Link } from 'react-router-dom';
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
@@ -14,7 +13,6 @@ export const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
-
                 <div className="content-page">
                     <Sidebar />
                     <AppRouter />
