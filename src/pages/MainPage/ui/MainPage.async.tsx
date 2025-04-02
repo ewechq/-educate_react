@@ -6,4 +6,3 @@ export const MainPageAsync = lazy(() => new Promise((resolve) => {
         resolve(import('./MainPage'));
     }, 1500);
 }));
-

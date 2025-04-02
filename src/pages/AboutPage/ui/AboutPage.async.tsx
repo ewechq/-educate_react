@@ -6,4 +6,3 @@ export const AboutPageAsync = lazy(() => new Promise((resolve) => {
         resolve(import('./AboutPage'));
     }, 1500);
 }));
-
