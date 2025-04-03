@@ -18,7 +18,7 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
             theme={ThemeButton.CLEAR}
             className={classNames(cls.ThemeSwitcher, {}, [className])}
         >
-            {theme === Theme.DARK ? <DarkIcon fill="red" /> : <LightIcon />}
+            {theme === Theme.DARK ? <DarkIcon fill="var(--inverted-primary-color)" /> : <LightIcon fill="var(--inverted-primary-color)" />}
         </Button>
     );
 };

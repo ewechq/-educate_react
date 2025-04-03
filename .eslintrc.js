@@ -45,7 +45,6 @@ module.exports = {
         'arrow-parens': [2, 'always'],
         'linebreak-style': 0,
         'i18next/no-literal-string': ['error', { markupOnly: true }],
-
     },
     globals: {
         __IS_DEV__: true,
