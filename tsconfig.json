@@ -7,9 +7,26 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths":{
-      "*":["./src/*"]
+    "baseUrl": "src",
+    "paths": {
+      "app/*": [
+        "app/*"
+      ],
+      "shared/*": [
+        "shared/*"
+      ],
+      "entities/*": [
+        "entities/*"
+      ],
+      "features/*": [
+        "features/*"
+      ],
+      "widgets/*": [
+        "widgets/*"
+      ],
+      "pages/*": [
+        "pages/*"
+      ]
     },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
@@ -18,5 +35,8 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "src"
+  ]
 }
