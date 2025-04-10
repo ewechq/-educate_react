@@ -15,7 +15,10 @@ export default {
     },
 } as ComponentMeta<typeof AppLink>;
 
-const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args} />;
+const Template: ComponentStory<typeof AppLink> = (args) => {
+    const { children, to, theme } = args;
+    return <AppLink to={to} theme={theme}>{children}</AppLink>;
+};
 
 export const Primary = Template.bind({});
 Primary.args = {

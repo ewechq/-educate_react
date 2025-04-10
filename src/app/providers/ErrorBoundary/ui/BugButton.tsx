@@ -6,7 +6,7 @@ interface BugButtonProps {
     className?: string;
 }
 // компонент для тестирования ошибок error boundary
-const BugButton = ({}: BugButtonProps) => {
+const BugButton = ({ className }: BugButtonProps) => {
     const { t } = useTranslation();
     const [error, setError] = useState(false);
     const throwError = () => setError(true);
@@ -17,7 +17,7 @@ const BugButton = ({}: BugButtonProps) => {
     }, [error]);
 
     return (
-        <Button onClick={throwError}>
+        <Button className={className} onClick={throwError}>
             {t('Throw error')}
         </Button>
     );
