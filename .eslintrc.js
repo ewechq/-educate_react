@@ -40,6 +40,7 @@ module.exports = {
         'comma-dangle': [2, 'always-multiline'],
         'arrow-parens': [2, 'always'],
         'linebreak-style': 0,
+        'no-console': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
     },
     globals: {
